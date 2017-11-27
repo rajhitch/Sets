@@ -1,0 +1,17 @@
+public class Prime {
+    private Boolean prime;
+    private int test;
+    public Prime(int i){
+        prime=true;
+        test=i;
+        if(i>1){int q=(i-1);for(int r=q;r>1;r--){if(testPrime(r)){
+            prime=false;break;}}}
+        if(prime==true){System.out.print(test+", ");}}
+    private Boolean testPrime(int x){
+        int result=test % x;
+        Boolean mod=false;
+        if(result==0){mod=true;}
+        return mod;}
+    public static void main(String[] alba){
+        Prime[] prime=new Prime[10000000];
+        for(int q=1;q<10000000;q++){prime[q-1]=new Prime(q);}}}
